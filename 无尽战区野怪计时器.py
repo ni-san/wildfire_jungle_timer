@@ -20,7 +20,7 @@ def keep_on_top(window):
 def countdown(label, counter, repeat_reset_time):
     counter -= 1
     label.config(text=str(counter))
-    if counter >= 0:
+    if counter > 0:
         label.after(1000, countdown, label, counter, repeat_reset_time)
     else:
         label.config(text=str(repeat_reset_time))
@@ -52,7 +52,8 @@ def begin_liusha():
     print("流沙黄点开始计时！")
     clear_all()  # 清除所有已有的计时窗口
     # 流沙场景的时间和位置
-    initial_times = [80, 80, 110, 140, 170, 170, 200, 200, 290, 290]
+    # initial_times = [80, 80, 110, 140, 170, 170, 200, 200, 290, 290]
+    initial_times = [79, 79, 109, 139, 169, 169, 199, 199, 289, 289]
     positions = [(2312, 215), (2520, 215), (2358, 250), (2472, 250),
                  (2388, 285), (2440, 285), (2395, 235), (2440, 235),
                  (2323, 300), (2507, 300)]
@@ -71,7 +72,8 @@ def begin_konggang():
     clear_all()  # 清除所有已有的计时窗口
     print("空港黄点开始计时！")
     # 空港场景的时间和位置
-    initial_times = [50, 50, 110, 110]
+    # initial_times = [50, 50, 110, 110]
+    initial_times = [49, 49, 109, 109]
     positions = [(2290, 250), (2480, 250), (2355, 290), (2435, 290)]
     repeat_time = 120
     # 创建空港场景的计时窗口
