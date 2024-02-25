@@ -90,9 +90,9 @@ def clear_all():
 if __name__ == "__main__":
     print("希望大家游戏愉快，如果遇到一只灰太狼，请爱护他。")
     print("请以管理员模式运行！当人物进入流沙地图时开始计时。")
-    print("按下ctrl+shift+l开始流沙计时！")
+    print("按下ctrl+shift+j开始流沙计时！")
     print("按下ctrl+shift+k开始空港计时！")
-    print("按下ctrl+shift+c清除计时器！")
+    print("按下ctrl+shift+l清除计时器！")
     print("退出请直接点击程序右上角。")
 
     # 注册快捷键
